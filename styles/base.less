@@ -21,15 +21,26 @@ atom-pane {
   }
 }
 
+
+
 .atom-dock-inner.left .tab-bar .active{background: transparent;}
 .atom-dock-inner.bottom .list-inline.tab-bar .tab{height: 34px;line-height: 34px;}
 .atom-dock-inner.bottom .list-inline.tab-bar .tab.active{background: rgb(26, 22, 25);}
 
-.overlay.from-top{border-radius: 0 0px 5px 5px}
+.overlay.from-top{border-radius: 0 0px 10px 10px}
 atom-panel.modal{box-shadow:0 2px 8px 1px rgba(0, 0, 0, 0)!important;}
-atom-text-editor[mini]{font-size: 16px; line-height: 35px; max-height: 37px;}
+.overlay, atom-panel.modal{width: 650px;margin-left: -325px;}
+atom-panel.modal .list-group li{font-size: 16px;line-height: 33px; border-bottom: 1px solid #2a2929}
 
-.select-list ol.list-group li .secondary-line {font-size: 10px!important;opacity: 0.5}
+
+atom-panel.modal  atom-text-editor[mini]{font-size: 22px; line-height: 40px; max-height: 60px;padding: 10px;}
+
+.tool-panel.panel-bottom .input-block atom-text-editor[mini],
+.tool-panel.panel-bottom .input-block .btn{font-size: 16px; line-height: 20px; max-height: 36px;height: 36px;padding: 8px;}
+
+.select-list ol.list-group li .secondary-line {font-size: 12px!important;opacity: 1}
+atom-panel.modal .list-group li .secondary-line.path{color: #9ec51e}
+atom-panel.modal .list-group li .primary-line{font-size: 20px;}
 
 .status-modified {color:#8f8de2!important}
 
